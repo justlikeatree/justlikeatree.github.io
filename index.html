@@ -321,7 +321,7 @@
 <li>安装好后，鼠标右键单击之前新建的hexo文件夹，选择Git Bash Here</li>
 <li>在出现的界面的$ 后面输入hexo init，初始化hexo（要出现$ 且可编辑状态的时候才算安装完成）</li>
 <li>在$ 后输入hexo -v，检测版本，看是否安装成功<h1 id="二、编写及发布到网上"><a href="#二、编写及发布到网上" class="headerlink" title="二、编写及发布到网上"></a>二、编写及发布到网上</h1><h2 id="1、编辑-config-yml"><a href="#1、编辑-config-yml" class="headerlink" title="1、编辑_config.yml"></a>1、编辑_config.yml</h2></li>
-<li>打开之前建的hexo文件夹，里面已经有了内容，找到并编辑_config.yml，<br>如果用电脑自带的记事本的话，一定要注意另存为时，不仅是文件名，编码也要改为 <h2 id="UTF-8编码！UTF-8编码！UTF-8编码！"><a href="#UTF-8编码！UTF-8编码！UTF-8编码！" class="headerlink" title="UTF-8编码！UTF-8编码！UTF-8编码！"></a>UTF-8编码！UTF-8编码！UTF-8编码！</h2>否则有些中文会显示成 ==<strong>乱码</strong>==！最好用其他的编辑器打开。</li>
+<li>打开之前建的hexo文件夹，里面已经有了内容，找到并编辑_config.yml，<br>如果用电脑自带的记事本的话，一定要注意另存为时，不仅是文件名，编码也要改为 <h3 id="UTF-8编码！UTF-8编码！UTF-8编码！"><a href="#UTF-8编码！UTF-8编码！UTF-8编码！" class="headerlink" title="UTF-8编码！UTF-8编码！UTF-8编码！"></a>UTF-8编码！UTF-8编码！UTF-8编码！</h3>否则有些中文会显示成 <strong>乱码</strong>！最好用其他的编辑器打开。</li>
 </ul>
 <p>编辑里面的内容时，</p>
 <h3 id="所有冒号后面一定要有一个空格！冒号后面一定要有一个空格！冒号后面一定要有一个空格！"><a href="#所有冒号后面一定要有一个空格！冒号后面一定要有一个空格！冒号后面一定要有一个空格！" class="headerlink" title="所有冒号后面一定要有一个空格！冒号后面一定要有一个空格！冒号后面一定要有一个空格！"></a>所有冒号后面一定要有一个空格！冒号后面一定要有一个空格！冒号后面一定要有一个空格！</h3><ul>
@@ -334,7 +334,7 @@
 </blockquote>
 </li>
 </ul>
-<p>（注意看主题的文件夹里的language的语言名字是什么，在_config.yml里的langguage: 后面写上语言）</p>
+<p>（注意看主题的文件夹里的language的语言名字是什么，在_config.yml里的language: 后面写上语言）</p>
 </li>
 <li><strong>修改博客</strong><blockquote>
 <p>title: 挣扎纪  //博客名字<br>subtitle: 学习啊学习啊啊啊  //博客描述<br>description: 经常性发呆，间接性发奋  //个人描述<br>keywords:<br>author: 郭啥啥  //作者<br>language: default<br>timezone: </p>
@@ -342,29 +342,31 @@
 </li>
 <li><strong>本地查看</strong><ul>
 <li>鼠标右键单击hexo文件夹，选择Git Bash Here，进入Git命令页面，输入hexo g，运行完后再输入hexo s。</li>
-<li>打开浏览器，输入<a href="http://localhost:4000/，可以看到博客的样子。要关掉Git" target="_blank" rel="noopener">http://localhost:4000/，可以看到博客的样子。要关掉Git</a> Bash的窗口的话，要先按ctrl+c。<h2 id="2、发布到网上"><a href="#2、发布到网上" class="headerlink" title="2、发布到网上"></a>2、发布到网上</h2></li>
+<li>打开浏览器，输入<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> ,可以看到博客的样子。要关掉Git Bash的窗口的话，要先按ctrl+c。<h2 id="2、发布到网上"><a href="#2、发布到网上" class="headerlink" title="2、发布到网上"></a>2、发布到网上</h2></li>
 </ul>
 </li>
 <li>打开_config.yml文档，修改最后面的内容如下，没有的直接添上,保存。</li>
 </ul>
 <blockquote>
-<p>deploy:<br>type: git    //使用Git 发布<br>repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:justlikeatree/justlikeatree.github.io.git    // 刚创建的Github仓库<br>branch: master</p>
-</blockquote>
+<p>deploy:<br>type: git    //使用Git 发布<br>repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:justlikeatree/justlikeatree.github.io.git    // 刚创建的Github仓库<br>branch: master   </p>
 <ul>
-<li><p>鼠标右键单击hexo文件夹，选择Git Bash Here，进入Git命令页面，设置git身份信息，输入</p>
-<blockquote>
-<p>git config –global user.name “你的用户名”<br>git config –global user.email “你的邮箱”</p>
-</blockquote>
-</li>
-<li><p>再输入npm install hexo-deployer-git –save，安装hexo git插件。<br><strong>单词一定不要打错了！！！</strong></p>
-</li>
+<li>鼠标右键单击hexo文件夹，选择Git Bash Here，进入Git命令页面，设置git身份信息，输入<br>git config –global user.name “你的用户名” //这两行都只修改双引号里的内容<br>git config –global user.email “你的邮箱”</li>
+<li>再输入npm install hexo-deployer-git –save，安装hexo git插件。<br><strong>单词一定不要打错了！！！</strong></li>
 </ul>
+</blockquote>
 <p>若输入后，返回的没有显示ERRO，只有WARN目前是没关系的。</p>
 <ul>
 <li>完成后，在$ 后输入hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</li>
 </ul>
 <p>如果这是第一次，终端会要求输入Github 的邮箱和密码，正确输入后，等待片刻，就会把博客上传至Github 了。以后在每次把博客写完后，执行一下这个命令就可以直接发布了</p>
-<p>关于hexo的文件设置<a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">hexo官网文档</a>里有详细说明~~</p>
+<p>##参考备注</p>
+<ol>
+<li><a href="https://www.jianshu.com/p/e6662ca7e283" target="_blank" rel="noopener">https://www.jianshu.com/p/e6662ca7e283</a></li>
+<li><a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/index.html</a></li>
+<li><a href="https://blog.csdn.net/qq_34047841/article/details/60129781" target="_blank" rel="noopener">https://blog.csdn.net/qq_34047841/article/details/60129781</a></li>
+<li><a href="https://www.cnblogs.com/hifor/p/4615286.html" target="_blank" rel="noopener">https://www.cnblogs.com/hifor/p/4615286.html</a></li>
+</ol>
+<p>关于hexo的文件设置<a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">hexo官网文档</a> 里有详细说明~~</p>
 
       
     </div>
