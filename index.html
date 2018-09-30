@@ -286,7 +286,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/30/github+hexo搭建博客记录/">github+hexo搭建博客记录</a>
+      <a class="article-title" href="/2018/09/30/github+hexo搭建博客记录/">github+hexo搭建博客记录 //不用在前面加#标题会无法显示</a>
     </h1>
   
 
@@ -345,22 +345,25 @@
 <li>打开浏览器，输入<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> ,可以看到博客的样子。要关掉Git Bash的窗口的话，要先按ctrl+c。<h2 id="2、发布到网上"><a href="#2、发布到网上" class="headerlink" title="2、发布到网上"></a>2、发布到网上</h2></li>
 </ul>
 </li>
-<li>打开_config.yml文档，修改最后面的内容如下，没有的直接添上,保存。</li>
-</ul>
+<li><p>打开_config.yml文档，修改最后面的内容如下，没有的直接添上,保存。</p>
 <blockquote>
 <p>deploy:<br>type: git    //使用Git 发布<br>repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:justlikeatree/justlikeatree.github.io.git    // 刚创建的Github仓库<br>branch: master   </p>
-<ul>
-<li>鼠标右键单击hexo文件夹，选择Git Bash Here，进入Git命令页面，设置git身份信息，输入<br>git config –global user.name “你的用户名” //这两行都只修改双引号里的内容<br>git config –global user.email “你的邮箱”</li>
-<li>再输入npm install hexo-deployer-git –save，安装hexo git插件。<br><strong>单词一定不要打错了！！！</strong></li>
-</ul>
 </blockquote>
+</li>
+<li><p>鼠标右键单击hexo文件夹，选择Git Bash Here，进入Git命令页面，设置git身份信息，输入</p>
+<blockquote>
+<p>git config –global user.name “你的用户名” //这两行都只修改双引号里的内容<br>git config –global user.email “你的邮箱”</p>
+</blockquote>
+</li>
+<li><p>再输入npm install hexo-deployer-git –save，安装hexo git插件。<br><strong>单词一定不要打错了！！！</strong></p>
+</li>
+</ul>
 <p>若输入后，返回的没有显示ERRO，只有WARN目前是没关系的。</p>
 <ul>
 <li>完成后，在$ 后输入hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</li>
 </ul>
 <p>如果这是第一次，终端会要求输入Github 的邮箱和密码，正确输入后，等待片刻，就会把博客上传至Github 了。以后在每次把博客写完后，执行一下这个命令就可以直接发布了</p>
-<p>##参考备注</p>
-<ol>
+<h2 id="参考备注"><a href="#参考备注" class="headerlink" title="参考备注"></a>参考备注</h2><ol>
 <li><a href="https://www.jianshu.com/p/e6662ca7e283" target="_blank" rel="noopener">https://www.jianshu.com/p/e6662ca7e283</a></li>
 <li><a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/index.html</a></li>
 <li><a href="https://blog.csdn.net/qq_34047841/article/details/60129781" target="_blank" rel="noopener">https://blog.csdn.net/qq_34047841/article/details/60129781</a></li>
