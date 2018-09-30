@@ -18,14 +18,14 @@
 <meta name="description" content="（vmware12虚拟机里的）win7x64位系统，github，nodejs，hexo 一、安装及环境配置1、安装github,nodejsgithub,nodejs在官网上都有安装的压缩文件下载，位置随意，我都安装在D盘上，直接按安装程序直接next下去。 (github,nodejs的安装可参考hexo官网文档，里面提供了安装包的链接和方法，我是下载安装程序来安装的) 安装好后，查看是否安装">
 <meta name="keywords" content="github,nodejs,hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="github+hexo搭建博客记录 &#x2F;&#x2F;不用在前面加#标题会无法显示">
+<meta property="og:title" content="github+hexo搭建博客记录">
 <meta property="og:url" content="http://justlikeatree.github.io/2018/09/30/github+hexo搭建博客记录/index.html">
 <meta property="og:site_name" content="挣扎纪">
 <meta property="og:description" content="（vmware12虚拟机里的）win7x64位系统，github，nodejs，hexo 一、安装及环境配置1、安装github,nodejsgithub,nodejs在官网上都有安装的压缩文件下载，位置随意，我都安装在D盘上，直接按安装程序直接next下去。 (github,nodejs的安装可参考hexo官网文档，里面提供了安装包的链接和方法，我是下载安装程序来安装的) 安装好后，查看是否安装">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-30T07:07:39.777Z">
+<meta property="og:updated_time" content="2018-09-30T07:39:10.007Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="github+hexo搭建博客记录 &#x2F;&#x2F;不用在前面加#标题会无法显示">
+<meta name="twitter:title" content="github+hexo搭建博客记录">
 <meta name="twitter:description" content="（vmware12虚拟机里的）win7x64位系统，github，nodejs，hexo 一、安装及环境配置1、安装github,nodejsgithub,nodejs在官网上都有安装的压缩文件下载，位置随意，我都安装在D盘上，直接按安装程序直接next下去。 (github,nodejs的安装可参考hexo官网文档，里面提供了安装包的链接和方法，我是下载安装程序来安装的) 安装好后，查看是否安装">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
@@ -58,7 +58,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>github+hexo搭建博客记录 //不用在前面加#标题会无法显示 | 挣扎纪</title>
+<title>github+hexo搭建博客记录 | 挣扎纪</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -281,7 +281,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      github+hexo搭建博客记录 //不用在前面加#标题会无法显示
+      github+hexo搭建博客记录
     </h1>
   
 
@@ -312,11 +312,11 @@
 <p>安装好后，查看是否安装成功，显示安装版本。</p>
 <ul>
 <li>同时按一下键盘上的“win””R”键，出现运行窗口，输入“cmd”，再确定。</li>
-<li>分三次，分别输入，每次输入后显示出对应版本即安装成功</li>
+<li>下面的代码分三次输入，每次一行，每次输入后显示出对应版本即安装成功</li>
 </ul>
-<p>‘git –version’</p>
-<p>‘node -v’</p>
-<p>‘npm -v’</p>
+<p><code>git --version</code></p>
+<p><code>node -v</code></p>
+<p><code>npm -v</code></p>
 <h2 id="2、github账号注册申请"><a href="#2、github账号注册申请" class="headerlink" title="2、github账号注册申请"></a>2、<a href="https://github.com/" target="_blank" rel="noopener">github账号注册申请</a></h2><ul>
 <li>点击标题后会进入github账号申请的页面,注册时记住用户名(username)、邮箱(email)、密码(password)</li>
 <li>新建一个仓库(new repository),在repository name下写上命名username.github.io（username是注册时的用户名 eg:<a href="justlikeatree.github.io">justlikeatree.github.io</a>）</li>
@@ -355,18 +355,17 @@
 <li>打开浏览器，输入<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> ,可以看到博客的样子。要关掉Git Bash的窗口的话，要先按ctrl+c。<h2 id="2、发布到网上"><a href="#2、发布到网上" class="headerlink" title="2、发布到网上"></a>2、发布到网上</h2></li>
 </ul>
 </li>
-<li><p>打开_config.yml文档，修改最后面的内容如下，没有的直接添上,保存。</p>
-<blockquote>
-<p>deploy:<br>type: git    //使用Git 发布<br>repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:justlikeatree/justlikeatree.github.io.git    // 刚创建的Github仓库<br>branch: master   </p>
+<li>打开_config.yml文档，修改最后面的内容如下，没有的直接添上,保存。<blockquote>
+<p>deploy:<br>type: git    //使用Git 发布<br>repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:justlikeatree/justlikeatree.github.io.git    // 刚创建的Github仓库<br>branch: master</p>
 </blockquote>
 </li>
-<li><p>鼠标右键单击hexo文件夹，选择Git Bash Here，进入Git命令页面，设置git身份信息，输入</p>
+<li>鼠标右键单击hexo文件夹，选择Git Bash Here，进入Git命令页面，设置git身份信息，输入</li>
+</ul>
 <blockquote>
 <p>git config –global user.name “你的用户名” //这两行都只修改双引号里的内容<br>git config –global user.email “你的邮箱”</p>
 </blockquote>
-</li>
-<li><p>再输入npm install hexo-deployer-git –save，安装hexo git插件。<br><strong>单词一定不要打错了！！！</strong></p>
-</li>
+<ul>
+<li>再输入npm install hexo-deployer-git –save，安装hexo git插件。<br><strong>单词一定不要打错了！！！</strong></li>
 </ul>
 <p>若输入后，返回的没有显示ERRO，只有WARN目前是没关系的。</p>
 <ul>
@@ -388,12 +387,12 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2018/09/30/github+hexo搭建博客记录/">github+hexo搭建博客记录 //不用在前面加#标题会无法显示</a></p>
+        <p><span>本文标题:</span><a href="/2018/09/30/github+hexo搭建博客记录/">github+hexo搭建博客记录</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">郭啥啥</a></p>
         <p><span>发布时间:</span>2018-09-30, 14:20:27</p>
-        <p><span>最后更新:</span>2018-09-30, 15:07:39</p>
+        <p><span>最后更新:</span>2018-09-30, 15:39:10</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2018/09/30/github+hexo搭建博客记录/" title="github+hexo搭建博客记录 //不用在前面加#标题会无法显示">http://justlikeatree.github.io/2018/09/30/github+hexo搭建博客记录/</a>
+            <span>原始链接:</span><a class="post-url" href="/2018/09/30/github+hexo搭建博客记录/" title="github+hexo搭建博客记录">http://justlikeatree.github.io/2018/09/30/github+hexo搭建博客记录/</a>
             <span class="copy-path" data-clipboard-text="原文: http://justlikeatree.github.io/2018/09/30/github+hexo搭建博客记录/　　作者: 郭啥啥" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -457,7 +456,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"github+hexo搭建博客记录 //不用在前面加#标题会无法显示　| 挣扎纪　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"github+hexo搭建博客记录　| 挣扎纪　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -489,7 +488,7 @@
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/09/30/github+hexo搭建博客记录/">github+hexo搭建博客记录 //不用在前面加#标题会无法显示</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/29/hello/">hello</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/29/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/09/30/github+hexo搭建博客记录/">github+hexo搭建博客记录</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/29/hello/">hello</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/29/hello-world/">Hello World</a></li></ul>
 
 
 
